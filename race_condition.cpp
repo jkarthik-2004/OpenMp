@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<omp.h>
 int main() {
@@ -11,3 +10,5 @@ int main() {
     }
     printf("The sum is %d\n",sum);
 }
+
+// we may get different outputs each time due to race condition (when two or more threads access shared resources or variables concurrently)
